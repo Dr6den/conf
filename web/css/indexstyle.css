@@ -16,17 +16,18 @@
     margin: 10px;
     position:absolute;
     top: 10px;
+    color: yellow;
 }
 
 .readtext {
     font-family: Verdana, sans-serif;
     font-style:normal;
     text-indent:1.1em;
-    border:2px solid black;
+    border:2px solid gold;
     padding: 5px;
     margin: 10px;
-    overflow: auto;
     clear:left;
+    color: gold;
 }
 
 .choisediv {
@@ -43,6 +44,8 @@
     width: 76%;
     border-left: 4px solid black;
     position: relative;
+    background-image: url('/confluence/images/background/anigreen.gif');
+    background-repeat: repeat;
 }
 
 .readbutton {

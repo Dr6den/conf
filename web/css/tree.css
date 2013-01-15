@@ -21,7 +21,7 @@
 
 /* indent for all tree children excepts root */
 .Node {
-    background-image : url(img/i.gif);
+    background-image : url('/confluence/images/tree/i.gif');
     background-position : top left;
     background-repeat : repeat-y;
     margin-left: 18px;
@@ -35,22 +35,22 @@
 
 /* left vertical line (grid) for all nodes */
 .IsLast {
-    background-image: url(img/i_half.gif);
+    background-image: url('/confluence/images/tree/i_half.gif');
     background-repeat : no-repeat;
 }
  
 .ExpandOpen .Expand {
-    background-image: url(img/expand_minus.gif);
+    background-image: url('/confluence/images/tree/expand_minus.gif');
 }
  
 /* closed is higher priority than open */
 .ExpandClosed .Expand {
-    background-image: url(img/expand_plus.gif);
+    background-image: url('/confluence/images/tree/expand_plus.gif');
 }
  
 /* highest priority */
 .ExpandLeaf .Expand {
-    background-image: url(img/expand_leaf.gif);
+    background-image: url('/confluence/images/tree/expand_leaf.gif');
 }
 
 .Content {
@@ -73,7 +73,7 @@
     width: 18px;
     height: 18px;
     float: left;
-    background-image: url(img/expand_loading.gif);
+    background-image: url('/confluence/images/tree/expand_loading.gif');
 }
 
 

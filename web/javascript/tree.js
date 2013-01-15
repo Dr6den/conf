@@ -24,3 +24,14 @@ function tree_toggle(event) {
 function hasClass(elem, className) {
 	return new RegExp("(^|\\s)"+className+"(\\s|$)").test(elem.className)
 }
+
+function addUl(parentId) {
+        var parent = document.getElementById(parentId);
+        var child = document.createElement('ul');
+        child.setAttribute('class', 'Container');
+        parent.appendChild(child);
+}
+
+function addLi(parentId) {
+        
+}
