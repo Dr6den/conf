@@ -11,12 +11,10 @@
     font-weight:bold;
     font-size:22px;
     text-indent:1em;
-    clear:left;
     padding: 5px;
     margin: 10px;
-    position:absolute;
-    top: 10px;
     color: yellow;
+    
 }
 
 .readtext {
@@ -26,26 +24,13 @@
     border:2px solid gold;
     padding: 5px;
     margin: 10px;
-    clear:left;
+    
     color: gold;
 }
 
-.choisediv {
-    width: 24%;
-    float: left;
-    border-right: 4px solid black;
-    margin-top: 0px;
-}
- 
-.documentdiv {
-    margin-top: 0px;
-    margin-left: 24%;
-    padding: 0.01em;
-    width: 76%;
-    border-left: 4px solid black;
-    position: relative;
-    background-image: url('/confluence/images/background/anigreen.gif');
-    background-repeat: repeat;
+#treediv {
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
 .readbutton {
@@ -53,16 +38,41 @@
     margin: 15px;
 }
 
-.outerdiv {
+.outertable {     
+    width: 100%;
+    position: static;
+}
+
+#headertd {
+    height: 100px;
+    background: crimson;
+    color: aliceblue;
     border: 4px solid black;
+}
+
+#footertd {
+    height: 100px;
+    background: crimson;
+    color: aliceblue;
+    border: 4px solid black;
+    position: relative;
+}
+
+.contenttd {
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+#treetd {
+    width: 30%;
+    border-right: 4px solid black;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    background-color: khaki;
+    position: static;
 }
 
-html {
-    height: 100%;
-    background-color: khaki;
-}
+

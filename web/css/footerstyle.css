@@ -7,13 +7,7 @@
 */
 
 .aspacef {
-    color: bisque;
-    background-color: crimson;
-    height: 100px;
-    border: solid 1px #333366;
-    clear: left;
-    position: relative;
-    border-top: 4px solid black;
+    position: inherit;
 }
 
 .inftext {
@@ -24,4 +18,5 @@
     left:40%;
     top: 30%;
     padding:0px;
+    margin-top: 0;
 }

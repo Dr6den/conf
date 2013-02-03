@@ -69,37 +69,69 @@
             <c:import url="/javascript/tree.js" />
         </script>
     </head>
-    
-    <body>
-        <div class="outerdiv">
-        <%@include file="/jspf/header.jspf"%> 
-        <div class="choisediv" id="choisediv">
-            <div onclick="tree_toggle(arguments[0])" id="treev">
-                <%
-                    String javascript = "";
-                    for (ContensElement celor:cel) {
-                        javascript = javascript + celor.getJavaScriptCodeOfElement();
-                        
-                    }
-                    %><script type="text/javascript">
-                            rootel = document.getElementById('treev');
-                            ulm = document.createElement('ul');
-                            ulm.setAttribute('id', 'ul0');
-                            ulm.setAttribute('class', 'Container');
-                            rootel.appendChild(ulm);
-                    <%=javascript%></script><%
-                %>                               
-            </div>
-        </div>
-        <div class="documentdiv" id="documentdiv">
-            <form action="/historyscroll/fileDealer" enctype="multipart/form-data" method="post"> 
-                <p class="readtitle"><%=title%></p>
-                <p class="readtext"><%=text%></p>
-                <input id="readedit" class="readbutton" type="submit" value="Edit"/>
-                <input id="readnew" class="readbutton" type="submit" value="New"/> 
-            </form>
-        </div>               
-        <%@include file="/jspf/footer.jspf"%>
-        </div>
+        
+    <body> 
+        <table class="outertable" cellpadding="0" cellspacing="0">
+            <tr>
+                <td id="headertd">
+                    <%@include file="/jspf/header.jspf"%>
+                </td>
+            </tr>
+            <tr>
+                <td class="contenttd">
+                    <table  cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td id="treetd" valign="top">
+                                <div id="treediv">
+                                    <div onclick="tree_toggle(arguments[0])" id="treev">
+                                        <%
+                                            String javascript = "";
+                                            for (ContensElement celor : cel) {
+                                                javascript = javascript + celor.getJavaScriptCodeOfElement();
+                                        
+                                            }
+                                        %><script type="text/javascript">
+                                            rootel = document.getElementById('treev');
+                                            ulm = document.createElement('ul');
+                                            ulm.setAttribute('id', 'ul0');
+                                            ulm.setAttribute('class', 'Container');
+                                            rootel.appendChild(ulm);
+                                            <%=javascript%></script><%
+                                            %>                               
+                                    </div>
+                                </div>
+                            </td>
+                            <td valign="top">
+                                <div>            
+                                    <table id="readtable">
+                                        <tr>
+                                            <td>
+                                                <p class="readtitle"><%=title%></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="readtext"><%=text%></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input id="readedit" class="readbutton" type="submit" value="Edit"/>                                        
+                                                <input id="readnew" class="readbutton" type="submit" value="New"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td id="footertd">
+                    <%@include file="/jspf/footer.jspf"%>
+                </td>
+            </tr>
+        </table> 
     </body>
 </html>

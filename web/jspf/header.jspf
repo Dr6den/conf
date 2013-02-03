@@ -18,6 +18,7 @@
     <p class="apptitle"><%=mainTitle%></p>
     <a class="alogin" href="login">log in</a>
 </div>
+    
 
 
 
